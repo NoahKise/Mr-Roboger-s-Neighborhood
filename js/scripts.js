@@ -1,5 +1,6 @@
 function roger(input) {
   const one = [1]
+  const two = [2]
   const inputArray = [];
   for (let i = 0; i <= input; i += 1) {
     inputArray.push(i);
@@ -11,6 +12,8 @@ function roger(input) {
   // forEach loop option
   inputArray.forEach(function(element) {
     if (one.includes(element)) {
+      boopArray.push("beep");
+    } else if (two.includes(element)) {
       boopArray.push("boop");
     } else {
       boopArray.push(element);
