@@ -21,28 +21,15 @@ function roger(input) {
   return beepString;
 }
 
-// forEach loop option
-// inputArray.forEach(function (element) {
-//   if (one.includes(element)) {
-//     beepArray.push("beep");
-//   } else if (two.includes(element)) {
-//     beepArray.push("boop");
-//   } else if (three.includes(element)) {
-//     beepArray.push("Won't you be my neighbor?");
-//   } else {
-//     beepArray.push(element);
-//   }
-//   console.log(beepArray);
-// })
+// UI Logic
 
+function formHandler(event) {
+  event.preventDefault();
+  document.querySelector("h3#result").innerText = ""
+  const userInput = document.querySelector("input#neighborInput").value;
+  document.querySelector("h3#result").append(roger(userInput));
+}
 
-// for loop option
-//   for (let i = 0; i < inputStringArray.length; i += 1) {
-//     if (one.includes(i)) {
-//       beepArray.push("boop");
-//     } else {
-//       beepArray.push(i);
-//     }
-//   }
-//   console.log(beepArray);
-// }
+window.addEventListener("load", function () {
+  document.querySelector("form#neighbor").addEventListener("submit", formHandler);
+});
