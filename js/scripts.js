@@ -25,11 +25,15 @@ function roger(input) {
 
 function formHandler(event) {
   event.preventDefault();
-  document.querySelector("h3#result").innerText = ""
+  document.querySelector("h5#result").innerText = ""
+  document.body.style.backgroundImage = "url('../img/binary.gif')"
+  document.body.style.backgroundSize = "cover"
   const userInput = document.querySelector("input#neighborInput").value;
-  document.querySelector("h3#result").append(roger(userInput));
+  document.querySelector("h5#result").append(roger(userInput));
 }
 
 window.addEventListener("load", function () {
   document.querySelector("form#neighbor").addEventListener("submit", formHandler);
+ 
+
 });

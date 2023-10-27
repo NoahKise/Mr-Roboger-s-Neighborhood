@@ -1,7 +1,7 @@
-body {
+/* body {
   background-image: url("../img/binary.gif");
   background-size: cover;
-}
+} */
 
 img {
   display: block;
@@ -15,8 +15,25 @@ img {
 .header {
   text-align: center;
   font-family: cursive;
+  box-sizing: border-box;
+  background-color: bisque;
+  width: 330px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  
 }
 
 .output {
   font-family: monospace;
+  box-sizing: border-box;
+  background-color: bisque;
+  width: 330px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
 }
