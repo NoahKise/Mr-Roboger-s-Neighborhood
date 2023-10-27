@@ -23,6 +23,10 @@ function roger(input) {
 
 // UI Logic
 
+window.onbeforeunload = function () {
+  window.scrollTo(0,0);
+};
+
 function formHandler(event) {
   event.preventDefault();
   document.querySelector("h5#result").innerText = ""
@@ -49,6 +53,4 @@ function formHandler(event) {
 
 window.addEventListener("load", function () {
   document.querySelector("form#neighbor").addEventListener("submit", formHandler);
-
-
 });
