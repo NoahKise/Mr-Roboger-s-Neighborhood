@@ -5,26 +5,34 @@ function roger(input) {
   for (let i = 0; i <= input; i += 1) {
     inputArray.push(i);
   }
-  const beepArray = [];
-  inputArray.forEach(function (element) {
-    if (element.toString().indexOf("3") > -1) {
-      beepArray.push("Won't you be my neighbor?");
-    } else if (element.toString().indexOf("2") > -1) {
-      beepArray.push("boop");
-    } else if (element.toString().indexOf("1") > -1) {
-      beepArray.push("beep");
-    } else {
-      beepArray.push(element);
-    }
-  })
-  const beepString = beepArray.join(" ");
-  return beepString;
+  console.log(inputArray)
+  if (inputArray.length === 1) {
+    const beepArray = [];
+    beepArray.push("error");
+    const beepString = beepArray.join(" ");
+    return beepString;
+  } else {
+    const beepArray = [];
+    inputArray.forEach(function (element) {
+      if (element.toString().indexOf("3") > -1) {
+        beepArray.push("Won't you be my neighbor?");
+      } else if (element.toString().indexOf("2") > -1) {
+        beepArray.push("boop");
+      } else if (element.toString().indexOf("1") > -1) {
+        beepArray.push("beep");
+      } else {
+        beepArray.push(element);
+      }
+    })
+    const beepString = beepArray.join(" ");
+    return beepString;
+  }
 }
 
 // UI Logic
 
 window.onbeforeunload = function () {
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 };
 
 function formHandler(event) {
