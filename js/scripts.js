@@ -30,20 +30,24 @@ function formHandler(event) {
   document.body.style.backgroundSize = "100%"
   document.querySelector("img#kick").removeAttribute("class");
   document.querySelector("h2#comingRightUp").removeAttribute("class");
+  document.querySelector("div#results").removeAttribute("class");
   const userInput = document.querySelector("input#neighborInput").value;
   document.querySelector("h5#result").append(roger(userInput));
   window.scrollTo({
     top: 550,
     behavior: "smooth",
   });
-  window.scrollTo({
-    top: 800,
-    behavior: "smooth",
-  });
+  setTimeout(scrollToResults, 2600)
+  function scrollToResults() {
+    window.scrollTo({
+      top: 1200,
+      behavior: "smooth",
+    });
+  }
 }
 
 window.addEventListener("load", function () {
   document.querySelector("form#neighbor").addEventListener("submit", formHandler);
- 
+
 
 });

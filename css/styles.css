@@ -1,5 +1,5 @@
 body {
-  background-color: aqua;
+  background-color: #b01f17;
 }
 .hidden {
   display: none;
@@ -35,7 +35,7 @@ img {
   
 }
 
-.output {
+#results {
   font-family: monospace;
   box-sizing: border-box;
   background-color: #f7e48d;
