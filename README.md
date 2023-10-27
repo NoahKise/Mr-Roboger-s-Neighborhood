@@ -21,5 +21,9 @@ Code: roger(10);
 Expected Output: [0, "beep", "boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "beep"]
 
 Test: "It should apply a hierarchy for numbers that contain different multiple target values (i.e. 1, 2, and 3) that prioritizes 3 over 2, and 2 over 1".
-Code: roger(24)
+Code: roger(24);
 Expected Output: [0, "beep", "boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "beep", "beep", "boop", "Won't you be my neighbor?", "beep", "beep", "beep", "beep", "beep", "beep", "boop", "boop", "boop", "Won't you be my neighbor?", "boop"]
+
+Test: "It should return some kind of error message if the input field on the form is left blank".
+Code: roger();
+Expected Output: ["error"];
