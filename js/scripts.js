@@ -5,44 +5,44 @@ function roger(input) {
   for (let i = 0; i <= input; i += 1) {
     inputArray.push(i);
   }
-  const boopArray = [];
+  const beepArray = [];
   inputArray.forEach(function (element) {
     if (element.toString().indexOf("3") > -1) {
-      boopArray.push("Won't you be my neighbor?");
+      beepArray.push("Won't you be my neighbor?");
     } else if (element.toString().indexOf("2") > -1) {
-      boopArray.push("boop");
+      beepArray.push("boop");
     } else if (element.toString().indexOf("1") > -1) {
-      boopArray.push("beep");
+      beepArray.push("beep");
     } else {
-      boopArray.push(element);
+      beepArray.push(element);
     }
   })
-  const boopString = boopArray.join(" ");
-  return boopString;
+  const beepString = beepArray.join(" ");
+  return beepString;
 }
 
 // forEach loop option
 // inputArray.forEach(function (element) {
 //   if (one.includes(element)) {
-//     boopArray.push("beep");
+//     beepArray.push("beep");
 //   } else if (two.includes(element)) {
-//     boopArray.push("boop");
+//     beepArray.push("boop");
 //   } else if (three.includes(element)) {
-//     boopArray.push("Won't you be my neighbor?");
+//     beepArray.push("Won't you be my neighbor?");
 //   } else {
-//     boopArray.push(element);
+//     beepArray.push(element);
 //   }
-//   console.log(boopArray);
+//   console.log(beepArray);
 // })
 
 
 // for loop option
 //   for (let i = 0; i < inputStringArray.length; i += 1) {
 //     if (one.includes(i)) {
-//       boopArray.push("boop");
+//       beepArray.push("boop");
 //     } else {
-//       boopArray.push(i);
+//       beepArray.push(i);
 //     }
 //   }
-//   console.log(boopArray);
+//   console.log(beepArray);
 // }
