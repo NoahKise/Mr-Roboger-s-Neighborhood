@@ -1,12 +1,19 @@
-/* body {
-  background-image: url("../img/binary.gif");
-  background-size: cover;
-} */
+body {
+  background-color: aqua;
+}
+
+
+#logo {
+  padding: 10px;
+  background-color: #f7e48d;
+  margin-bottom: 10px;
+}
 
 img {
   display: block;
   box-sizing: border-box;
-  width: 380px;
+  width: 70vw;
+  max-width: 380px;
   margin-left: auto;
   margin-right: auto;
   border: 3px solid black;
@@ -16,8 +23,9 @@ img {
   text-align: center;
   font-family: cursive;
   box-sizing: border-box;
-  background-color: bisque;
-  width: 330px;
+  background-color: #f7e48d;
+  width: 70vw;
+  max-width: 380px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +36,7 @@ img {
 .output {
   font-family: monospace;
   box-sizing: border-box;
-  background-color: bisque;
+  background-color: #f7e48d;
   width: 330px;
   margin-top: 10px;
   margin-left: auto;
