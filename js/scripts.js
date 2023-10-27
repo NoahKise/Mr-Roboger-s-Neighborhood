@@ -34,7 +34,6 @@ function roger(input) {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
-
 function formHandler(event) {
   event.preventDefault();
   document.querySelector("h5#result").innerText = ""
