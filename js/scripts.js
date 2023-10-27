@@ -39,13 +39,13 @@ function formHandler(event) {
   const userInput = document.querySelector("input#neighborInput").value;
   document.querySelector("h5#result").append(roger(userInput));
   window.scrollTo({
-    top: 540,
+    top: 935,
     behavior: "smooth",
   });
   setTimeout(scrollToResults, 2600)
   function scrollToResults() {
     window.scrollTo({
-      top: 1190,
+      top: 1595,
       behavior: "smooth",
     });
   }
