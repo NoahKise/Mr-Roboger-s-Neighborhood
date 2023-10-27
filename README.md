@@ -2,7 +2,7 @@
 
 #### By Noah Kise
 
-#### A simple web application that takes a users number input and returns to them an approximation of a Mr. Rogers robot counting to that number.
+#### A simple web application that takes a user's number input and returns to them an approximation of a Mr. Rogers robot counting to that number.
 
 ## Technologies Used
 
@@ -15,9 +15,9 @@
 
 This web application will take a number input and return a string approximating a robot counting to that number.  It is lighthearted, with a focus on simple functionality and clean but fun styling. This project was completed to fulfill the third independent project code review at Epicodus.
 
-### Business Logic Tests
+## Business Logic Tests
 
-## Describe roger()
+### Describe roger()
 
 * Test: "It should return an array of integers from 0 to the user's inputted integer".
 Code: roger(5);
