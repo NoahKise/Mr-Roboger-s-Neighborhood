@@ -16,6 +16,10 @@ Test: "It should replace any numbers that contain a 3 with "Won't you be my neig
 Code: roger(4);
 Expected Output: [0, "beep", "boop", "Won't you be my neighbor?", 4]
 
+Test: "It should recognize the 1 or 2 or 3 in a number regardless of which digit place it is in".
+Code: roger(10);
+Expected Output: [0, "beep", "boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "beep"]
+
 Test: "It should apply a hierarchy for numbers that contain different multiple target values (i.e. 1, 2, and 3) that prioritizes 3 over 2, and 2 over 1".
 Code: roger(24)
 Expected Output: [0, "beep", "boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "beep", "beep", "boop", "Won't you be my neighbor?", "beep", "beep", "beep", "beep", "beep", "beep", "boop", "boop", "boop", "Won't you be my neighbor?", "boop"]
