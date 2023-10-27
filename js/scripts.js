@@ -31,16 +31,17 @@ function formHandler(event) {
   document.querySelector("img#kick").removeAttribute("class");
   document.querySelector("h2#comingRightUp").removeAttribute("class");
   document.querySelector("div#results").removeAttribute("class");
+  document.querySelector("div#reset").removeAttribute("class");
   const userInput = document.querySelector("input#neighborInput").value;
   document.querySelector("h5#result").append(roger(userInput));
   window.scrollTo({
-    top: 550,
+    top: 540,
     behavior: "smooth",
   });
   setTimeout(scrollToResults, 2600)
   function scrollToResults() {
     window.scrollTo({
-      top: 1200,
+      top: 1190,
       behavior: "smooth",
     });
   }
