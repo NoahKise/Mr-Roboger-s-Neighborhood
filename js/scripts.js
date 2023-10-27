@@ -27,9 +27,13 @@ function formHandler(event) {
   event.preventDefault();
   document.querySelector("h5#result").innerText = ""
   document.body.style.backgroundImage = "url('../img/binary.gif')"
-  document.body.style.backgroundSize = "cover"
+  document.body.style.backgroundSize = "100%"
   const userInput = document.querySelector("input#neighborInput").value;
   document.querySelector("h5#result").append(roger(userInput));
+  window.scrollTo({
+    top: 685,
+    behavior: "smooth",
+  });
 }
 
 window.addEventListener("load", function () {
