@@ -28,10 +28,16 @@ function formHandler(event) {
   document.querySelector("h5#result").innerText = ""
   document.body.style.backgroundImage = "url('../img/binary.gif')"
   document.body.style.backgroundSize = "100%"
+  document.querySelector("img#kick").removeAttribute("class");
+  document.querySelector("h2#comingRightUp").removeAttribute("class");
   const userInput = document.querySelector("input#neighborInput").value;
   document.querySelector("h5#result").append(roger(userInput));
   window.scrollTo({
-    top: 685,
+    top: 550,
+    behavior: "smooth",
+  });
+  window.scrollTo({
+    top: 800,
     behavior: "smooth",
   });
 }
