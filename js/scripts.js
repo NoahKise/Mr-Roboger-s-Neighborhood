@@ -8,7 +8,7 @@ function roger(input) {
   console.log(inputArray)
   if (inputArray.length === 1) {
     const beepArray = [];
-    beepArray.push("error");
+    beepArray.push("Well, he can't count if you don't give him something to count to!");
     const beepString = beepArray.join(" ");
     return beepString;
   } else {
