@@ -1,17 +1,11 @@
 // Business Logic
 
 function roger(input) {
-  const one = [1];
-  const two = [2];
-  const three = [3];
   const inputArray = [];
   for (let i = 0; i <= input; i += 1) {
     inputArray.push(i);
   }
-  const inputStringArray = inputArray.map(String);
-  console.log(inputStringArray);
   const boopArray = [];
-
   inputArray.forEach(function (element) {
     if (element.toString().indexOf("3") > -1) {
       boopArray.push("Won't you be my neighbor?");
@@ -22,8 +16,9 @@ function roger(input) {
     } else {
       boopArray.push(element);
     }
-    console.log(boopArray);
   })
+  const boopString = boopArray.join(" ");
+  return boopString;
 }
 
 // forEach loop option
