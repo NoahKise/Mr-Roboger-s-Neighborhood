@@ -37,7 +37,7 @@ window.onbeforeunload = function () {
 function formHandler(event) {
   event.preventDefault();
   document.querySelector("h5#result").innerText = ""
-  document.body.style.backgroundImage = "url('../img/binary.gif')"
+  document.body.style.backgroundImage = "url('/img/binary.gif')"
   document.body.style.backgroundSize = "100%"
   document.querySelector("img#kick").removeAttribute("class");
   document.querySelector("h2#comingRightUp").removeAttribute("class");
